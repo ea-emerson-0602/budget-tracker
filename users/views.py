@@ -189,7 +189,7 @@ class PasswordResetOTPEmailView(generics.CreateAPIView):
         # Send email with OTP and generic link
         send_mail(
             'Password Reset OTP',
-            f'Your OTP: {data['otp']}\n\nClick here to reset: {verification_link}',
+            f"Your OTP: {data['otp']}\n\nClick here to reset: {verification_link}",
             DEFAULT_FROM_EMAIL,
             [serializer.validated_data['email']],
             fail_silently=False,
