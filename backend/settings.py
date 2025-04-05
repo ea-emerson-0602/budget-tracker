@@ -192,9 +192,9 @@ CORS_ALLOW_CREDENTIALS = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # # settings.py
-# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"  # For production use
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"  # For production use
 # For development:
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
